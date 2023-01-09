@@ -330,6 +330,7 @@ template {
   box-sizing: border-box;
   background-color: var(--neutral-dark-grayish-blue);
   width: calc(100% - 2em);
+  max-width: 625px;
   border-radius: 0.7em;
   text-align: center;
   padding: 2.2em 1.5em;
@@ -365,6 +366,14 @@ template {
 }
 .advice__btn:hover {
   box-shadow: 0 0 2.5em var(--primary-neon-green);
+}
+@media screen and (min-width: 500px) {
+  .advice {
+    font-size: 1.4rem;
+  }
+  .advice__btn {
+    padding: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
