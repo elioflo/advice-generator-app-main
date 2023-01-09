@@ -1,0 +1,44 @@
+.advice {
+    box-sizing: border-box;
+    background-color: var(--neutral-dark-grayish-blue);
+    width: calc(100% - 2em);
+    border-radius: .7em;
+    text-align: center;
+    padding: 2.2em 1.5em;
+    padding-bottom: 0;
+    font-size: 1rem;
+
+    &__line {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+    &__id {
+        color: var(--primary-neon-green);
+        font-size: .7em;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        margin-bottom: 2.2em;
+    }
+
+    &__text {
+        color: var(--primary-light-cyan);
+        font-size: 1.5em;
+        line-height: 1.4;
+    }
+
+    &__btn {
+        background-color: var(--primary-neon-green);
+        border: none;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3em;
+        transform: translateY(50%);
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 2.5em var(--primary-neon-green);
+        }
+    }
+}
