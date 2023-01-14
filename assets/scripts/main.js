@@ -1,3 +1,7 @@
+import { FrontendmentorFooter } from "./components/frontendmentor/frontendmentor.js";
+
+window.customElements.define('frontendmentor-footer', FrontendmentorFooter);
+
 document.getElementById('btn').addEventListener('click', (e) => {
   console.log('CLICKED!!')
   fetch('https://api.adviceslip.com/advice', { cache: "no-cache" })

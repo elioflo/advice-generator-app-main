@@ -9,6 +9,21 @@
   <title>Frontend Mentor | Advice generator app</title>
 
   <link rel="stylesheet" href="./assets/styles/css/main.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://ga.jspm.io/npm:lit@2.6.1/index.js"
+      },
+      "scopes": {
+        "https://ga.jspm.io/": {
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.1/reactive-element.js",
+          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.2/lit-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.6.1/lit-html.js",
+          "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.6.1/is-server.js"
+        }
+      }
+    }
+</script>
 </head>
 <body>
   <main class="container">
@@ -20,9 +35,11 @@
         It is easy to sit up and take notice, what's difficult is getting up and take action.
       </q>
       <img class="advice__line" src="./assets/images/pattern-divider-desktop.svg" alt="">
-      <button class="advice__btn" id="btn"><img src="./assets/images/icon-dice.svg" alt=""></button>
+      <button class="advice__btn" id="btn" aria-label="Random advice button"><img src="./assets/images/icon-dice.svg" alt="icon"></button>
     </div>
   </main>
-  <script src="./assets/scripts/main.js"></script>
+  <frontendmentor-footer name="Elio Flores" url="https://elioflo.github.io/elioflo/">
+  </frontendmentor-footer>
+  <script src="./assets/scripts/main.js" type="module"></script>
 </body>
 </html>
